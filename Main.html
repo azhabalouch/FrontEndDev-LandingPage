@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Bing</title>
+    <meta name="description" content="Discover and invite users to try out Bing.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Bing, search engine, discover, invite, Microsoft">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Discover Bing">
+    <meta property="og:description" content="Explore the features of Bing and invite others to join the experience.">
+    <meta property="og:image" content="URL to an image for social sharing">
+    <meta property="og:url" content="URL of the page">
+
+    <!-- Twitter Meta Tags for Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discover Bing">
+    <meta name="twitter:description" content="Explore the features of Bing and invite others to join the experience.">
+    <meta name="twitter:image" content="URL to an image for Twitter">
+  
+  <link rel="stylesheet" href="StyleSheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- 12 columns in the grid -->
+  <div class="container">
+    <header class="Nav">
+      <div class="logo"><img src="images/mLogo.png" alt="Microsoft Logo"></div>
+
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li id="try"><a href="#try">Try</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="Home">
+        <img id="cover" src="images/BgPic.png" alt="3d Male Character showing search with 3d icons" width="800">
+        <h1><img src="images/logo.png" alt="Bing short Logo" width="50"> Discover Bing</h1>
+        <p>Universe of Information at Your Fingertips. With Bing, you get more than just search results; you get a comprehensive overview, diverse perspectives, and intuitive features. Bing is a search engine developed by Microsoft, providing a unique search experience with innovative features. Explore the features of Bing and invite others to join the experience.
+        </p>
+      </section>
+      <section class="About">
+        <div class="img-about">
+          <img src="images/charAndScreen.png" alt="3d Female Character" width="500">
+        </div>
+        <div class="details-about">
+          <h1>Your Comprehensive Search Solution</h1>
+          <p>Bing is a fast, accurate, and user-friendly search engine that offers diverse content, from web pages to videos. It provides key information through rich snippets and knowledge panels, and unique features like visual search and Bing Rewards. Bing respects your privacy, supports multiple languages, and integrates seamlessly with other Microsoft products. Experience the Bing difference today!</p>
+          <button id="abBtn">Read More</button>
+        </div>
+      </section>
+      <section class="Reviews">
+        <div class="headerReview">
+          <h1>User Reviews</h1>
+          <img src="images/char4.png" alt="3d Male Character Talking on phone with icons" height="50px">
+        </div>
+        
+        <div class="cards">
+          <div class="card">
+            <img src=images/User1.jpg alt="Emma Wills" width="100px" height="100px"></img>
+            <div class="cardHeader">
+                <h3>Ally Doe</h3>
+                <p>4.8 <span style="color: #7B28AA;">&starf;</span></p>
+            </div>
+  
+            <p id="review">“Bing has transformed my online search experience. It’s fast, accurate, and provides diverse content. Truly a game-changer!”</p>
+          </div>
+  
+          <div class="card">
+            <img src=images/User2.jpg alt="Jane Smith" width="100px" height="100px"></img>
+            <div class="cardHeader">
+                <h3>Jane Smith</h3>
+                <p>4.7 <span style="color: #7B28AA;">&starf;</span></p>
+            </div>
+  
+            <p id="review">“I love how Bing tailors the search results to my needs. It’s like having a personal assistant at my fingertips.”</p>
+          </div>
+  
+          <div class="card">
+            <img src=images/User3.jpg alt="Alice Johnson" width="100px" height="100px"></img>
+            <div class="cardHeader">
+                <h3>Jane Smith</h3>
+                <p>4.9 <span style="color: #7B28AA;">&starf;</span></p>
+            </div>
+  
+            <p id="review">“Whether I’m researching for work or just browsing the web, Bing is my go-to search engine. The speed and accuracy is great.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Try">
+        <div class="tryImage">
+          <img src="images/char2.png" alt="3d Female Character" height="250px">
+          <img src="images/logo.png" alt="Bing Logo" height="250px">
+        </div>
+        <p>Ready to Discover? <button class="try-bing-now-button">Try Bing Now</button> or Download the Bing App Today!</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo-input">
+        <img src="images/mLogo.png" alt="Microsoft Logo">
+        <form>
+            <input type="text" id="email" name="userEmail" placeholder="Enter your email">
+            <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+
+      <div class="info">
+        <div class="footer-column">
+          <h3>Landing Page</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#try">Try</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>      
+        </div>
+  
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#Twitter">Twitter</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#Instagram">Instagram</a></li>
+          </ul>     
+        </div>
+  
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: support@bing.com<br>
+              Phone: 1-800-123-4567</p>
+        </div>
+      </div>
+      
+      <div class="endRights">
+        <div class="line"></div>
+        <p id="copyright">© All rights reserved 2023</p>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+
+</body>
+</html>

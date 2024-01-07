@@ -1,0 +1,664 @@
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Selecting all h1 elements globally */
+* h1 {
+  /* Your styling for all h1 elements goes here */
+  font-size: 48px;
+}
+
+* h3 {
+  font-size: 18px;
+}
+
+* p {
+  font-size: 18px;
+}
+
+/* Styling for the main container */
+.container {
+  display: grid;
+  width: 1440px;
+  height: 3800px;
+  grid-template-rows: 0.1fr 6fr 0.7fr;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url('images/BingLandingPage.png');
+  background-size: cover; /* Adjust as needed */
+}
+
+/* Media query for larger screens */
+@media (min-width: 1441px) {
+  .container {
+    background-image: none; /* Remove background image on larger screens */
+  }
+
+  body {
+    background-image: url('images/BingLandingPage1920.png'); /* Change body background image on larger screens */
+  }
+}
+
+/* Styling for the body element */
+body {
+  font-family: 'Outfit';
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  margin: 0; /* Remove default margin */
+}
+
+/* Styling for demonstration purposes */
+div {
+  text-align: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* Styling for the navigation bar */
+.Nav {
+  display: inline-flex;
+  justify-content: space-around;
+  grid-row: 1;
+  grid-column: span 12;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Styling for the logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the logo image */
+.logo img {
+  width: 170px;
+  height: 27px;
+}
+
+/* Remove list-style and padding for the ul in navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for each list item in navigation */
+nav li {
+  margin: 10px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 30px; /* Add rounded corners for a softer look */
+  transition-duration: 0.4s;
+}
+
+/* Purple shadow background on 'Try' item */
+#try {
+  padding-left: 40px;
+  padding-right: 40px;
+  transition-duration: 0.3s;
+  background-color: rgba(12, 25, 70, 0.5); /* Purple color with 50% transparency */
+}
+
+/* Hover effect on 'Try' item */
+#try:hover {
+  background-color: #7a28aac2; /* Purple color */
+}
+
+/* Hover effect on all list items */
+nav li:hover {
+  background-color: #dddddd27; /* Lighter background on hover */
+  cursor: pointer; /* Change cursor on hover for better UX */
+}
+
+/* Styling for anchor tags */
+a {
+  text-decoration: none;
+  color: #fff; /* Text color for better visibility */
+}
+
+/* Styling for the main content section */
+main {
+  grid-row: 2;
+  grid-column: span 12;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 0.6fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* Styling for the Home section */
+.Home {
+  grid-row: 1;
+  grid-column: span 12;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Styling for the Home section's heading */
+.Home h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 30px;
+}
+
+/* Styling for the Home section's heading image */
+.Home h1 img {
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Styling for the Home section's paragraph */
+.Home p {
+  font-weight: 300;
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Styling for the About section */
+.About {
+  grid-row: 2;
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-around;
+  margin: 15%;
+}
+
+/* Styling for the details about section */
+.details-about {
+  width: 460px;
+  text-align: left;
+}
+
+/* Styling for the details about section's heading */
+.details-about h1 {
+  font-weight: bold;
+}
+
+/* Styling for the details about section's paragraph */
+.details-about p {
+  text-align: justify;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Styling for the 'Try Bing Now' button */
+#abBtn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 7px 40px 7px 40px;
+  background-color: #0C1946;
+  transition-duration: 0.4s;
+}
+
+/* Hover effect on the 'Try Bing Now' button */
+#abBtn:hover {
+  background-color: #132d8b;
+  cursor: pointer;
+}
+
+/* Styling for the Reviews section */
+.Reviews {
+  grid-row: 3;
+  grid-column: span 12;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-sizing: border-box;
+}
+
+/* Styling for the header in the Reviews section */
+.headerReview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the header in the Reviews section's heading */
+.headerReview h1 {
+  font-weight: bold;
+}
+
+/* Styling for the header in the Reviews section's image */
+.headerReview img {
+  width: 15%;
+  height: auto;
+}
+
+/* Styling for the individual review cards */
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for each review card */
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the image inside each review card */
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Styling for the header inside each review card */
+.cardHeader h3 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Styling for the additional information inside each review card */
+.cardHeader p {
+  font-weight: 700;
+}
+
+/* Styling for the review text inside each review card */
+#review {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Styling for the header and spacing inside each review card */
+.card .cardHeader {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for the Try section */
+.Try {
+  grid-row: 4;
+  grid-column: span 12;
+  padding: 5%;
+}
+
+/* Styling for the Try section's paragraph */
+.Try p {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Styling for the 'Try Bing Now' button */
+.try-bing-now-button {
+  background: none;
+  border: 2px solid #7B28AA;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Outfit; 
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 2;
+  margin: 10px;
+  padding: 0 10px;
+  transition-duration: 0.4s;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on the 'Try Bing Now' button */
+.try-bing-now-button:hover {
+  text-shadow: 1px 1px 1px rgba(123, 40, 170, 0.2);
+  box-shadow: 0px 4px 6px rgba(123, 40, 170, 0.2);
+}
+
+/* Styling for the footer section */
+footer {
+  grid-row: 3;
+  grid-column: span 12;
+  margin-top: 15%;
+}
+
+/* Styling for the logo and input section in the footer */
+.logo-input {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+}
+
+/* Styling for the logo image in the footer */
+.logo-input img {
+  width: 16%;
+  height: 5%;
+}
+
+/* Styling for the form in the footer */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Styling for the input field in the form */
+form input {
+  color: white;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal; 
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: transparent; /* No background color */
+  padding: 10px;
+  outline: none; /* Remove default input field outline */
+  width: 450px;
+  height: 19px;
+}
+
+/* Styling for the placeholder in the input field */
+form input::placeholder {
+  color: white;
+}
+
+/* Styling for the submit button in the form */
+form button {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal; 
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 45px;
+  background-color: #0C1946;
+  transition-duration: 0.4s;
+  position: absolute; /* Added this line */
+  right: 0; /* Added this line */
+}
+
+/* Hover effect on the submit button */
+form button:hover {
+  background-color: #132d8b;
+  cursor: pointer;
+}
+
+/* Styling for the information section in the footer */
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 30%;
+  margin-right: 18%;
+}
+
+/* Styling for each column in the information section */
+.footer-column {
+  flex: 1;
+  max-width: 200px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+/* Styling for the heading in each column */
+.footer-column h3 {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+  margin-bottom: 20px;
+}
+
+/* Styling for the unordered list in each column */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for each list item in each column */
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+/* Styling for the anchor tag in each list item */
+.footer-column ul li a {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Styling for the paragraph in each column */
+.footer-column p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Styling for the endRights section in the footer */
+.endRights {
+  display: block;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100%;
+}
+
+/* Styling for the line separator in the endRights section */
+.line {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width: 67%;
+}
+
+/* Styling for the copyright information in the endRights section */
+#copyright {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+@media (max-width:1280px){
+  /* Selecting all h1 elements globally */
+  * h1 {
+    /* Your styling for all h1 elements goes here */
+    font-size: 36px;
+  }
+
+  * h3 {
+    font-size: 14px;
+  }
+
+  * p {
+    font-size: 14px;
+  }
+
+  .About img {
+    width: 450px;
+  }
+
+  .card {
+    width: 220px;
+    height: 320px;
+  }
+}
+
+@media (max-width:1024px){
+  /* Selecting all h1 elements globally */
+  * h1 {
+    /* Your styling for all h1 elements goes here */
+    font-size: 30px;
+  }
+
+  * h3 {
+    font-size: 12px;
+  }
+
+  * p {
+    font-size: 12px;
+  }
+
+  .Home p {
+    width: 45%;
+  }
+
+  .About img {
+    width: 400px;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width:768px){
+  /* Selecting all h1 elements globally */
+  * h1 {
+    /* Your styling for all h1 elements goes here */
+    font-size: 26px;
+  }
+
+  * h3 {
+    font-size: 12px;
+  }
+
+  * p {
+    font-size: 10px;
+  }
+
+  .Home h1 {
+    padding-top: 150px;
+  }
+
+  .Home p {
+    width: 50%;
+  }
+
+  .About {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-about {
+    padding-bottom: 80px;
+    width: 440px;
+  }
+
+  #cover {
+    width: 600px;
+    padding-top: 100px;
+  }
+
+  .About img {
+    width: 400px;
+  }
+
+  .card {
+    width: 160px;
+    height: 280px;
+  }
+
+  .tryImage img {
+    height: 200px;
+    width: auto;
+  }
+
+  form input {
+    width: 300px;
+    height: 12px;
+    font-size: 12px;
+    border: 1px solid white;
+  }
+
+  form button {
+    padding: 12px 35px;
+    font-size: 12px;
+  }
+
+    /* Styling for the anchor tag in each list item */
+  .footer-column ul li a {
+    font-size: 10px;
+  }
+
+  .footer-column p {
+    font-size: 10px;
+  }
+
+  /* Styling for each column in the information section */
+  .footer-column {
+    padding: 10px;
+  }
+}
+
+@media (max-width:600px){
+  * h1 {
+    /* Your styling for all h1 elements goes here */
+    font-size: 30px;
+  }
+
+  * h3 {
+    font-size: 14px;
+  }
+
+  * p {
+    font-size: 14px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333; /* Gradiantt */
+  }
+
+  nav li {
+    margin: 0;
+    padding: 15px;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 15px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
