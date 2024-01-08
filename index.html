@@ -23,19 +23,22 @@
     <meta name="twitter:description" content="Explore the features of Bing and invite others to join the experience.">
     <meta name="twitter:image" content="URL to an image for Twitter">
   
-  <link rel="stylesheet" href="StyleSheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Link to external style sheet and fonts -->
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   
-  <!-- 12 columns in the grid -->
+  <!-- Container with 12 columns in the grid -->
   <div class="container">
+    <!-- Header Section -->
     <header class="Nav">
       <div class="logo"><img src="images/mLogo.png" alt="Microsoft Logo"></div>
 
+      <!-- Navigation Menu -->
       <nav>
         <div class="menu-icon" onclick="toggleMenu()">
           <div class="bar"></div>
@@ -51,7 +54,9 @@
       </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main>
+      <!-- Home Section -->
       <section class="Home">
         <img id="cover" src="images/BgPic.png" alt="3d Male Character showing search with 3d icons" width="800">
         <h1><img id="bLogo" src="images/logo.png" alt="Bing short Logo" width="50"> Discover Bing</h1>
@@ -59,6 +64,7 @@
         </p>
       </section>
 
+      <!-- About Section -->
       <section class="About">
         <div class="img-about">
           <img src="images/charAndScreen.png" alt="3d Female Character" width="500">
@@ -70,6 +76,7 @@
         </div>
       </section>
 
+      <!-- Reviews Section -->
       <section class="Reviews">
         <div class="headerReview">
           <h1>User Reviews</h1>
@@ -81,9 +88,11 @@
             <img id="arrow" src="images/leftArrow.png" alt="Arrow Left">
           </button>
           
+          <!-- User Review Cards -->
           <div class="cards">
+            <!-- User 1 Review -->
             <div class="card" id="cardOne">
-              <img src=images/User1.jpg alt="Emma Wills" width="100px" height="100px"></img>
+              <img src="images/User1.jpg" alt="Emma Wills" width="100px" height="100px">
               <div class="cardHeader">
                   <h3>Ally Doe</h3>
                   <p>4.8 <span style="color: #7B28AA;">&starf;</span></p>
@@ -92,8 +101,9 @@
               <p id="review">“Bing has transformed my online search experience. It’s fast, accurate, and provides diverse content. Truly a game-changer!”</p>
             </div>
     
+            <!-- User 2 Review -->
             <div class="card" id="cardTwo">
-              <img src=images/User2.jpg alt="Jane Smith" width="100px" height="100px"></img>
+              <img src="images/User2.jpg" alt="Jane Smith" width="100px" height="100px">
               <div class="cardHeader">
                   <h3>Jane Smith</h3>
                   <p>4.7 <span style="color: #7B28AA;">&starf;</span></p>
@@ -102,23 +112,26 @@
               <p id="review">“I love how Bing tailors the search results to my needs. It’s like having a personal assistant at my fingertips.”</p>
             </div>
     
+            <!-- User 3 Review -->
             <div class="card" id="cardThree">
-              <img src=images/User3.jpg alt="Alice Johnson" width="100px" height="100px"></img>
+              <img src="images/User3.jpg" alt="Alice Johnson" width="100px" height="100px">
               <div class="cardHeader">
                   <h3>Alice Johnson</h3>
                   <p>4.9 <span style="color: #7B28AA;">&starf;</span></p>
               </div>
     
-              <p id="review">“Whether I’m researching for work or just browsing the web, Bing is my go-to search engine. The speed and accuracy is great.”</p>
+              <p id="review">“Whether I’m researching for work or just browsing the web, Bing is my go-to search engine. The speed and accuracy are great.”</p>
             </div>
           </div>
   
+          <!-- Right Arrow Button -->
           <button class="rightArrow" onclick="nextCard()">
             <img id="arrow" src="images/rightArrow.png" alt="Arrow right">
           </button>
         </div>
       </section>
 
+      <!-- Try Section -->
       <section class="Try">
         <div class="tryImage">
           <img src="images/char2.png" alt="3d Female Character" height="250px">
@@ -128,7 +141,9 @@
       </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
+      <!-- Logo and Email Subscription Form -->
       <div class="logo-input">
         <img src="images/mLogo.png" alt="Microsoft Logo">
         <form>
@@ -137,7 +152,9 @@
         </form>
       </div>
 
+      <!-- Footer Information Columns -->
       <div class="info">
+        <!-- Landing Page Links -->
         <div class="footer-column">
           <h3>Landing Page</h3>
           <ul>
@@ -148,6 +165,7 @@
           </ul>
         </div>
   
+        <!-- Legal Links -->
         <div class="footer-column">
           <h3>Legal</h3>
           <ul>
@@ -156,6 +174,7 @@
           </ul>      
         </div>
   
+        <!-- Follow Us Links -->
         <div class="footer-column">
           <h3>Follow Us</h3>
           <ul>
@@ -165,6 +184,7 @@
           </ul>     
         </div>
   
+        <!-- Contact Information -->
         <div class="footer-column">
           <h3>Contact Us</h3>
           <p>Email: support@bing.com<br>
@@ -172,16 +192,27 @@
         </div>
       </div>
       
+      <!-- Copyright Information -->
       <div class="endRights">
         <div class="line"></div>
-        <p id="copyright">© All rights reserved 2023</p>
+        <p id="copyright">© Azha Balouch | All rights reserved 2023</p>
       </div>
 
     </footer>
 
+    <!-- JavaScript Files -->
     <script src="script.js"></script>
-    <script src="card.js"></script>
-  </div>
 
+    <script>
+      // Check if the screen width is 480 pixels or less
+      if (window.innerWidth <= 480) {
+          // Load card.js for mobile
+          var mobileScript = document.createElement('script');
+          mobileScript.src = 'card.js'; // Replace with the actual file name or path
+          document.head.appendChild(mobileScript);
+      }
+    </script>
+
+  </div>
 </body>
 </html>
