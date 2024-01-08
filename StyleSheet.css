@@ -26,18 +26,9 @@
   grid-template-rows: 0.1fr 6fr 0.7fr;
   grid-template-columns: repeat(12, 1fr);
   background-image: url('images/BingLandingPage.png');
-  background-size: cover; /* Adjust as needed */
-}
-
-/* Media query for larger screens */
-@media (min-width: 1441px) {
-  .container {
-    background-image: none; /* Remove background image on larger screens */
-  }
-
-  body {
-    background-image: url('images/BingLandingPage1920.png'); /* Change body background image on larger screens */
-  }
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image within the container */
 }
 
 /* Styling for the body element */
@@ -490,6 +481,20 @@ form button:hover {
   margin-bottom: 10px;
 }
 
+/* Media query for larger screens */
+@media (min-width: 1441px) {
+  .container {
+    background-image: none; /* Remove background image on larger screens */
+  }
+
+  body {
+    background-image: url('images/BingLandingPage1920.png'); /* Change body background image on larger screens */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image within the container */
+  }
+}
+
 @media (max-width:1280px){
   /* Selecting all h1 elements globally */
   * h1 {
@@ -544,7 +549,7 @@ form button:hover {
   }
 }
 
-@media (max-width:768px){
+@media (max-width:810px){
   /* Selecting all h1 elements globally */
   * h1 {
     /* Your styling for all h1 elements goes here */
@@ -623,7 +628,7 @@ form button:hover {
   }
 }
 
-@media (max-width:600px){
+@media (max-width:450px){
   * h1 {
     /* Your styling for all h1 elements goes here */
     font-size: 30px;
@@ -637,15 +642,32 @@ form button:hover {
     font-size: 14px;
   }
 
+  .container {
+    grid-template-rows: 0.1fr 6fr 0.7fr;
+    background-image: none;
+  }
+
+  body {
+    background-image: url('images/BingLandingPageMobile.png');
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center;
+  }
+
+  .Nav {
+    justify-content:space-between;
+  }
+
   nav ul {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     text-align: center;
     position: absolute;
-    top: 70px;
-    left: 0;
-    background-color: #333; /* Gradiantt */
+    top: 50px;
+    right: 15px;
+    border-radius: 30px;
+    background: linear-gradient(#5D4AD5, #0C1946); /* Gradiantt */
   }
 
   nav li {
@@ -660,5 +682,121 @@ form button:hover {
 
   .menu-icon {
     display: block;
+  }
+
+  main {
+    grid-row: 2;
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.5fr 0.4fr;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  #cover {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .Home h1 {
+    padding: 0;
+    padding-top: 0px;
+    width: 100%;
+    color: white;
+  }
+
+  #bLogo {
+    width: 30px;
+  }
+
+  .Home p {
+    width: 90%;
+    padding-top: 10px;
+    color: white;
+  }
+
+  .About {
+    margin: 0;
+  }
+
+  .img-about {
+    width: 100%;
+  }
+
+  .About img {
+    width: 100%;
+  }
+
+  .details-about {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Reviews{
+    padding-top: 50%;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .headerReview h1 {
+    text-align: left;
+  }
+
+  .headerReview img {
+    width: 40%;
+  }
+
+  .Try {
+    padding: 0;
+    margin: 0;
+  }
+
+  .Try p {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+
+  .card {
+    display: none;
+  }
+
+  #cardone {
+    display: block;
+  }
+
+  .logo-input {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .logo-input img{
+    width: 30%;
+    height: auto;
+  }
+
+  form input {
+    width: 100%;
+    height: 8px;
+    font-size: 12px;
+    border: 1px solid white;
+  }
+
+  form {
+    margin: 0;
+    position:unset;
+  }
+
+  form button {
+      padding: 9px 20px;
+      margin-right: 3%;
+      font-size: 12px;
+  }
+
+  .info {
+    margin: 0;
+    margin-right: 3%;
+    margin-left: 3%;
   }
 }
