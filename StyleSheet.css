@@ -230,6 +230,14 @@ main {
   align-items: center;
 }
 
+.leftArrow {
+  display: none;
+}
+
+.rightArrow {
+  display: none;
+}
+
 /* Styling for the header in the Reviews section's heading */
 .headerReview h1 {
   font-weight: bold;
@@ -249,11 +257,11 @@ main {
 
 /* Styling for each review card */
 .card {
-  width: 250px;
+  width: 30%;
   height: 350px;
   border-radius: 18px;
   background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   box-sizing: border-box;
 }
@@ -515,8 +523,8 @@ form button:hover {
   }
 
   .card {
-    width: 220px;
-    height: 320px;
+    width: 30%;
+    height: 350px;
   }
 }
 
@@ -544,7 +552,7 @@ form button:hover {
   }
 
   .card {
-    width: 200px;
+    width: 30%;
     height: 300px;
   }
 }
@@ -592,8 +600,8 @@ form button:hover {
   }
 
   .card {
-    width: 160px;
-    height: 280px;
+    width: 30%;
+    height: 270px;
   }
 
   .tryImage img {
@@ -735,8 +743,8 @@ form button:hover {
   .Reviews{
     padding-top: 50%;
     margin: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .headerReview h1 {
@@ -756,14 +764,6 @@ form button:hover {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
-  }
-
-  .card {
-    display: none;
-  }
-
-  #cardone {
-    display: block;
   }
 
   .logo-input {
@@ -799,4 +799,55 @@ form button:hover {
     margin-right: 3%;
     margin-left: 3%;
   }
+
+  .CardAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 15%;
+ }
+
+ .leftArrow {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+ }
+
+ #arrow {
+    width: 35px; /* Adjust the width to your preference */
+    height: 35px; /* Maintain a square aspect ratio */
+    object-fit: cover;
+    display: block;
+ }
+
+ .rightArrow {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+ }
+
+ .cards {
+    width: 60%;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .card {
+    width: 90%;
+    height: 330px;
+    animation: fadeIn ease-in 0.5s;
+ }
+ 
+ @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+ }
 }

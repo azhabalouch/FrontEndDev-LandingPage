@@ -75,37 +75,47 @@
           <h1>User Reviews</h1>
           <img src="images/char4.png" alt="3d Male Character Talking on phone with icons" height="50px">
         </div>
-        
-        <div class="cards">
-          <div class="card" id="cardone">
-            <img src=images/User1.jpg alt="Emma Wills" width="100px" height="100px"></img>
-            <div class="cardHeader">
-                <h3>Ally Doe</h3>
-                <p>4.8 <span style="color: #7B28AA;">&starf;</span></p>
+
+        <div class="CardAndButton">
+          <button class="leftArrow" onclick="previousCard()">
+            <img id="arrow" src="images/leftArrow.png" alt="Arrow Left">
+          </button>
+          
+          <div class="cards">
+            <div class="card" id="cardOne">
+              <img src=images/User1.jpg alt="Emma Wills" width="100px" height="100px"></img>
+              <div class="cardHeader">
+                  <h3>Ally Doe</h3>
+                  <p>4.8 <span style="color: #7B28AA;">&starf;</span></p>
+              </div>
+    
+              <p id="review">“Bing has transformed my online search experience. It’s fast, accurate, and provides diverse content. Truly a game-changer!”</p>
             </div>
-  
-            <p id="review">“Bing has transformed my online search experience. It’s fast, accurate, and provides diverse content. Truly a game-changer!”</p>
+    
+            <div class="card" id="cardTwo">
+              <img src=images/User2.jpg alt="Jane Smith" width="100px" height="100px"></img>
+              <div class="cardHeader">
+                  <h3>Jane Smith</h3>
+                  <p>4.7 <span style="color: #7B28AA;">&starf;</span></p>
+              </div>
+    
+              <p id="review">“I love how Bing tailors the search results to my needs. It’s like having a personal assistant at my fingertips.”</p>
+            </div>
+    
+            <div class="card" id="cardThree">
+              <img src=images/User3.jpg alt="Alice Johnson" width="100px" height="100px"></img>
+              <div class="cardHeader">
+                  <h3>Alice Johnson</h3>
+                  <p>4.9 <span style="color: #7B28AA;">&starf;</span></p>
+              </div>
+    
+              <p id="review">“Whether I’m researching for work or just browsing the web, Bing is my go-to search engine. The speed and accuracy is great.”</p>
+            </div>
           </div>
   
-          <div class="card">
-            <img src=images/User2.jpg alt="Jane Smith" width="100px" height="100px"></img>
-            <div class="cardHeader">
-                <h3>Jane Smith</h3>
-                <p>4.7 <span style="color: #7B28AA;">&starf;</span></p>
-            </div>
-  
-            <p id="review">“I love how Bing tailors the search results to my needs. It’s like having a personal assistant at my fingertips.”</p>
-          </div>
-  
-          <div class="card">
-            <img src=images/User3.jpg alt="Alice Johnson" width="100px" height="100px"></img>
-            <div class="cardHeader">
-                <h3>Jane Smith</h3>
-                <p>4.9 <span style="color: #7B28AA;">&starf;</span></p>
-            </div>
-  
-            <p id="review">“Whether I’m researching for work or just browsing the web, Bing is my go-to search engine. The speed and accuracy is great.”</p>
-          </div>
+          <button class="rightArrow" onclick="nextCard()">
+            <img id="arrow" src="images/rightArrow.png" alt="Arrow right">
+          </button>
         </div>
       </section>
 
@@ -170,6 +180,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="card.js"></script>
   </div>
 
 </body>
