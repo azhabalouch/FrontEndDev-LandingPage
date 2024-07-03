@@ -13,9 +13,7 @@ Welcome to my GitHub repository showcasing my front-end development skills. In t
 - **stylesheet.css:** The stylesheet responsible for the visual presentation and layout.
 
 ## How to View
-To view the Bing landing page:
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in a modern web browser.
+To view the [Bing landing page](https://azhabalouch.github.io/FrontEndDev-LandingPage/)
 
 ## Credits
 - **Microsoft Bing:** Inspiration for the design and layout.
